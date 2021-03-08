@@ -1,0 +1,88 @@
+\hypertarget{classchatapplication__server_1_1exception_1_1_property_load_exception}{}\doxysection{chatapplication\+\_\+server.\+exception.\+Property\+Load\+Exception Class Reference}
+\label{classchatapplication__server_1_1exception_1_1_property_load_exception}\index{chatapplication\_server.exception.PropertyLoadException@{chatapplication\_server.exception.PropertyLoadException}}
+Inheritance diagram for chatapplication\+\_\+server.\+exception.\+Property\+Load\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classchatapplication__server_1_1exception_1_1_property_load_exception}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classchatapplication__server_1_1exception_1_1_property_load_exception_ad8b85692f0c0a9ff729ee47ecba06695}{Property\+Load\+Exception}} (String property\+ID, String m)
+\item 
+String \mbox{\hyperlink{classchatapplication__server_1_1exception_1_1_property_load_exception_a69cd42e22e0236b1889a586ce6e3a2e3}{to\+String}} ()
+\item 
+String \mbox{\hyperlink{classchatapplication__server_1_1exception_1_1_property_load_exception_a1273ed52f22033b8170bdb5220e62229}{property\+To\+String}} ()
+\item 
+String \mbox{\hyperlink{classchatapplication__server_1_1exception_1_1_property_load_exception_ac1840527bbf4ba5f0a97f47515b36241}{get\+Message}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This kind of exception is thrown whenever an attempt to load an invalid configuration property given by the user when booting up the Chat\+Application Server side.
+
+This mainly has to do with the loading of the server IP and the port number.
+
+\begin{DoxyAuthor}{Author}
+atgianne 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1exception_1_1_property_load_exception_ad8b85692f0c0a9ff729ee47ecba06695}\label{classchatapplication__server_1_1exception_1_1_property_load_exception_ad8b85692f0c0a9ff729ee47ecba06695}} 
+\index{chatapplication\_server.exception.PropertyLoadException@{chatapplication\_server.exception.PropertyLoadException}!PropertyLoadException@{PropertyLoadException}}
+\index{PropertyLoadException@{PropertyLoadException}!chatapplication\_server.exception.PropertyLoadException@{chatapplication\_server.exception.PropertyLoadException}}
+\doxysubsubsection{\texorpdfstring{PropertyLoadException()}{PropertyLoadException()}}
+{\footnotesize\ttfamily chatapplication\+\_\+server.\+exception.\+Property\+Load\+Exception.\+Property\+Load\+Exception (\begin{DoxyParamCaption}\item[{String}]{property\+ID,  }\item[{String}]{m }\end{DoxyParamCaption})}
+
+Creates a new instance of \mbox{\hyperlink{classchatapplication__server_1_1exception_1_1_property_load_exception}{Property\+Load\+Exception}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em property\+ID} & String describing the kind of loaded property \\
+\hline
+{\em m} & String describing the type of exception error \\
+\hline
+\end{DoxyParams}
+Get the suitable property given by the user
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1exception_1_1_property_load_exception_ac1840527bbf4ba5f0a97f47515b36241}\label{classchatapplication__server_1_1exception_1_1_property_load_exception_ac1840527bbf4ba5f0a97f47515b36241}} 
+\index{chatapplication\_server.exception.PropertyLoadException@{chatapplication\_server.exception.PropertyLoadException}!getMessage@{getMessage}}
+\index{getMessage@{getMessage}!chatapplication\_server.exception.PropertyLoadException@{chatapplication\_server.exception.PropertyLoadException}}
+\doxysubsubsection{\texorpdfstring{getMessage()}{getMessage()}}
+{\footnotesize\ttfamily String chatapplication\+\_\+server.\+exception.\+Property\+Load\+Exception.\+get\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Standard Exception.\+get\+Message override implementation
+
+\begin{DoxyReturn}{Returns}
+The exception message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchatapplication__server_1_1exception_1_1_property_load_exception_a1273ed52f22033b8170bdb5220e62229}\label{classchatapplication__server_1_1exception_1_1_property_load_exception_a1273ed52f22033b8170bdb5220e62229}} 
+\index{chatapplication\_server.exception.PropertyLoadException@{chatapplication\_server.exception.PropertyLoadException}!propertyToString@{propertyToString}}
+\index{propertyToString@{propertyToString}!chatapplication\_server.exception.PropertyLoadException@{chatapplication\_server.exception.PropertyLoadException}}
+\doxysubsubsection{\texorpdfstring{propertyToString()}{propertyToString()}}
+{\footnotesize\ttfamily String chatapplication\+\_\+server.\+exception.\+Property\+Load\+Exception.\+property\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method for returning the correct name of the property value as used in the lotus-\/system.\+propery file.
+
+\begin{DoxyReturn}{Returns}
+A string representation of the property name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchatapplication__server_1_1exception_1_1_property_load_exception_a69cd42e22e0236b1889a586ce6e3a2e3}\label{classchatapplication__server_1_1exception_1_1_property_load_exception_a69cd42e22e0236b1889a586ce6e3a2e3}} 
+\index{chatapplication\_server.exception.PropertyLoadException@{chatapplication\_server.exception.PropertyLoadException}!toString@{toString}}
+\index{toString@{toString}!chatapplication\_server.exception.PropertyLoadException@{chatapplication\_server.exception.PropertyLoadException}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String chatapplication\+\_\+server.\+exception.\+Property\+Load\+Exception.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Standard Object.\+to\+String implementation.
+
+\begin{DoxyReturn}{Returns}
+A string representation of the exception message 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+chatapplication\+\_\+server/exception/Property\+Load\+Exception.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\hypertarget{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component}{}\doxysection{chatapplication\+\_\+server.\+components.\+base.\+Generic\+Threaded\+Component Class Reference}
+\label{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component}\index{chatapplication\_server.components.base.GenericThreadedComponent@{chatapplication\_server.components.base.GenericThreadedComponent}}
+Inheritance diagram for chatapplication\+\_\+server.\+components.\+base.\+Generic\+Threaded\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.826087cm]{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_acccc072fa0756b99dc279ab10f732a51}{initialize}} ()  throws Component\+Init\+Exception     
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a6b3f86ab035ca8452a60b33a91bc5597}{shutdown}} ()
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a2ea90c637cda6fa14f181c660fef641b}{run}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_ae38f04a63544aaf4bfc3313557709654}{must\+Shutdown}} = false
+\item 
+Thread \mbox{\hyperlink{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a5318e8358d77f68b862a765a9beacf92}{local\+Thread}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class serves as the basis for a multithreaded component that does N\+OT receive any network messages. Classes that extend this class need to implement the \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a784d941c136f65a7c3152edd7a1821bb}{component\+Main()}} method which serves as the main thread loop for the component. In addition you can override the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_acccc072fa0756b99dc279ab10f732a51}{initialize()}} and \mbox{\hyperlink{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a6b3f86ab035ca8452a60b33a91bc5597}{shutdown()}} methods which implement the \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component}{I\+Component}} interface to provide additional initialization/shutdown code for your component. I\+M\+P\+O\+R\+T\+A\+NT If you do override them, please make sure that when your custom initialization and shutting down is complete that you invoke the original methods that takes care of threading.
+
+\begin{DoxyAuthor}{Author}
+atgianne 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_acccc072fa0756b99dc279ab10f732a51}\label{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_acccc072fa0756b99dc279ab10f732a51}} 
+\index{chatapplication\_server.components.base.GenericThreadedComponent@{chatapplication\_server.components.base.GenericThreadedComponent}!initialize@{initialize}}
+\index{initialize@{initialize}!chatapplication\_server.components.base.GenericThreadedComponent@{chatapplication\_server.components.base.GenericThreadedComponent}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+base.\+Generic\+Threaded\+Component.\+initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classchatapplication__server_1_1exception_1_1_component_init_exception}{Component\+Init\+Exception}}}
+
+Default implementation of the \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a94b26077c9d5c8961d3a87c31ccfbbc0}{I\+Component.\+initialize()}} method. It just starts a thread for this component. If you override this DO N\+OT forget to invoke it after you do your own initialization.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component}{I\+Component}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a94b26077c9d5c8961d3a87c31ccfbbc0}{chatapplication\+\_\+server.\+components.\+base.\+I\+Component}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine_a85ec25a565ac7b4e829815d3774aff5a}{chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Server\+Engine}}, and \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_aaba8b752d01d735abaaf6f0f69f51138}{chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine}}.
+
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a2ea90c637cda6fa14f181c660fef641b}\label{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a2ea90c637cda6fa14f181c660fef641b}} 
+\index{chatapplication\_server.components.base.GenericThreadedComponent@{chatapplication\_server.components.base.GenericThreadedComponent}!run@{run}}
+\index{run@{run}!chatapplication\_server.components.base.GenericThreadedComponent@{chatapplication\_server.components.base.GenericThreadedComponent}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+base.\+Generic\+Threaded\+Component.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Java thread entry point. Default action is to invoke the component\+Main function of the \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component}{I\+Component}} interface. \mbox{\Hypertarget{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a6b3f86ab035ca8452a60b33a91bc5597}\label{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a6b3f86ab035ca8452a60b33a91bc5597}} 
+\index{chatapplication\_server.components.base.GenericThreadedComponent@{chatapplication\_server.components.base.GenericThreadedComponent}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!chatapplication\_server.components.base.GenericThreadedComponent@{chatapplication\_server.components.base.GenericThreadedComponent}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+base.\+Generic\+Threaded\+Component.\+shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default implementation of \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_ab1872d668128a5e8284b8ba84ed12e54}{I\+Component.\+shutdown()}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component}{I\+Component}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_ab1872d668128a5e8284b8ba84ed12e54}{chatapplication\+\_\+server.\+components.\+base.\+I\+Component}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine_a31b14485e4311abdbfa1efb18c92d1f0}{chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Server\+Engine}}, and \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a98c2067b77792b34d2f7439f5bf2c9fd}{chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a5318e8358d77f68b862a765a9beacf92}\label{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a5318e8358d77f68b862a765a9beacf92}} 
+\index{chatapplication\_server.components.base.GenericThreadedComponent@{chatapplication\_server.components.base.GenericThreadedComponent}!localThread@{localThread}}
+\index{localThread@{localThread}!chatapplication\_server.components.base.GenericThreadedComponent@{chatapplication\_server.components.base.GenericThreadedComponent}}
+\doxysubsubsection{\texorpdfstring{localThread}{localThread}}
+{\footnotesize\ttfamily Thread chatapplication\+\_\+server.\+components.\+base.\+Generic\+Threaded\+Component.\+local\+Thread\hspace{0.3cm}{\ttfamily [protected]}}
+
+The internal thread handle for this component \mbox{\Hypertarget{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_ae38f04a63544aaf4bfc3313557709654}\label{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_ae38f04a63544aaf4bfc3313557709654}} 
+\index{chatapplication\_server.components.base.GenericThreadedComponent@{chatapplication\_server.components.base.GenericThreadedComponent}!mustShutdown@{mustShutdown}}
+\index{mustShutdown@{mustShutdown}!chatapplication\_server.components.base.GenericThreadedComponent@{chatapplication\_server.components.base.GenericThreadedComponent}}
+\doxysubsubsection{\texorpdfstring{mustShutdown}{mustShutdown}}
+{\footnotesize\ttfamily boolean chatapplication\+\_\+server.\+components.\+base.\+Generic\+Threaded\+Component.\+must\+Shutdown = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Did we receive a signal to shut down 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+chatapplication\+\_\+server/components/base/Generic\+Threaded\+Component.\+java\end{DoxyCompactItemize}

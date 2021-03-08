@@ -1,0 +1,101 @@
+\hypertarget{classchatapplication__server_1_1_component_manager}{}\doxysection{chatapplication\+\_\+server.\+Component\+Manager Class Reference}
+\label{classchatapplication__server_1_1_component_manager}\index{chatapplication\_server.ComponentManager@{chatapplication\_server.ComponentManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classchatapplication__server_1_1_component_manager_a8ab3f9d911fc2c82214630e40cae73bf}{start\+Components\+List}} (Linked\+List component\+Names)
+\item 
+boolean \mbox{\hyperlink{classchatapplication__server_1_1_component_manager_a2f99cc3996504b7c210d79f1dbf41860}{start\+Component}} (String component\+Name)
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1_component_manager_a530a774f966f8799ac816fd9090c3a39}{stop\+Components}} ()
+\item 
+synchronized void \mbox{\hyperlink{classchatapplication__server_1_1_component_manager_aa28fcac0836d9be0fd0c1ed1fa0a1aa2}{fatal\+Exception}} (Exception e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classchatapplication__server_1_1_component_manager}{Component\+Manager}} \mbox{\hyperlink{classchatapplication__server_1_1_component_manager_a5748c6e533001b04a97beb18773275a8}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The component manager handles the starting and stopping of all system components. It also handles gracefull error recovery by terminating any running components and then quitting the program with an exit code equal to 1.
+
+\begin{DoxyAuthor}{Author}
+atgianne 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1_component_manager_aa28fcac0836d9be0fd0c1ed1fa0a1aa2}\label{classchatapplication__server_1_1_component_manager_aa28fcac0836d9be0fd0c1ed1fa0a1aa2}} 
+\index{chatapplication\_server.ComponentManager@{chatapplication\_server.ComponentManager}!fatalException@{fatalException}}
+\index{fatalException@{fatalException}!chatapplication\_server.ComponentManager@{chatapplication\_server.ComponentManager}}
+\doxysubsubsection{\texorpdfstring{fatalException()}{fatalException()}}
+{\footnotesize\ttfamily synchronized void chatapplication\+\_\+server.\+Component\+Manager.\+fatal\+Exception (\begin{DoxyParamCaption}\item[{Exception}]{e }\end{DoxyParamCaption})}
+
+Method invoked when a fatal exception occurs. Cleanly shut down the L\+S\+CS system and exit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & A reference to the occurred exception \\
+\hline
+\end{DoxyParams}
+Shut down all the component
+
+Exit the L\+S\+CS system\mbox{\Hypertarget{classchatapplication__server_1_1_component_manager_a5748c6e533001b04a97beb18773275a8}\label{classchatapplication__server_1_1_component_manager_a5748c6e533001b04a97beb18773275a8}} 
+\index{chatapplication\_server.ComponentManager@{chatapplication\_server.ComponentManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!chatapplication\_server.ComponentManager@{chatapplication\_server.ComponentManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classchatapplication__server_1_1_component_manager}{Component\+Manager}} chatapplication\+\_\+server.\+Component\+Manager.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Implementation of the \mbox{\hyperlink{classchatapplication__server_1_1_component_manager_a5748c6e533001b04a97beb18773275a8}{get\+Instance()}} method. It returns the running instance of the \mbox{\hyperlink{classchatapplication__server_1_1_component_manager}{Component\+Manager}} \mbox{\Hypertarget{classchatapplication__server_1_1_component_manager_a2f99cc3996504b7c210d79f1dbf41860}\label{classchatapplication__server_1_1_component_manager_a2f99cc3996504b7c210d79f1dbf41860}} 
+\index{chatapplication\_server.ComponentManager@{chatapplication\_server.ComponentManager}!startComponent@{startComponent}}
+\index{startComponent@{startComponent}!chatapplication\_server.ComponentManager@{chatapplication\_server.ComponentManager}}
+\doxysubsubsection{\texorpdfstring{startComponent()}{startComponent()}}
+{\footnotesize\ttfamily boolean chatapplication\+\_\+server.\+Component\+Manager.\+start\+Component (\begin{DoxyParamCaption}\item[{String}]{component\+Name }\end{DoxyParamCaption})}
+
+Start the component corresponding to the given name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em component\+Names} & String name of the component to be started @retun F\+A\+L\+SE on error; T\+R\+UE otherwise \\
+\hline
+\end{DoxyParams}
+Try to instansiate the component and get its I\+Component interface
+
+Try to start the component
+
+Add to active components list in reverse order\mbox{\Hypertarget{classchatapplication__server_1_1_component_manager_a8ab3f9d911fc2c82214630e40cae73bf}\label{classchatapplication__server_1_1_component_manager_a8ab3f9d911fc2c82214630e40cae73bf}} 
+\index{chatapplication\_server.ComponentManager@{chatapplication\_server.ComponentManager}!startComponentsList@{startComponentsList}}
+\index{startComponentsList@{startComponentsList}!chatapplication\_server.ComponentManager@{chatapplication\_server.ComponentManager}}
+\doxysubsubsection{\texorpdfstring{startComponentsList()}{startComponentsList()}}
+{\footnotesize\ttfamily boolean chatapplication\+\_\+server.\+Component\+Manager.\+start\+Components\+List (\begin{DoxyParamCaption}\item[{Linked\+List}]{component\+Names }\end{DoxyParamCaption})}
+
+Start the given list of components.
+
+
+\begin{DoxyParams}{Parameters}
+{\em component\+Names} & A list containing the names of the components to be started @retun F\+A\+L\+SE on error; T\+R\+UE otherwise \\
+\hline
+\end{DoxyParams}
+Try to instansiate the component and get its I\+Component interface
+
+Try to start the component
+
+Add to active components list in reverse order\mbox{\Hypertarget{classchatapplication__server_1_1_component_manager_a530a774f966f8799ac816fd9090c3a39}\label{classchatapplication__server_1_1_component_manager_a530a774f966f8799ac816fd9090c3a39}} 
+\index{chatapplication\_server.ComponentManager@{chatapplication\_server.ComponentManager}!stopComponents@{stopComponents}}
+\index{stopComponents@{stopComponents}!chatapplication\_server.ComponentManager@{chatapplication\_server.ComponentManager}}
+\doxysubsubsection{\texorpdfstring{stopComponents()}{stopComponents()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+Component\+Manager.\+stop\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Shut down all the active Chat\+Application\+Server components in the reverse order from which they were started. Signal also the Component\+Manger that it must terminate its execution
+
+Get the I\+Component interface for this component
+
+Stop the component
+
+Clear the active\+Component list
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+chatapplication\+\_\+server/Component\+Manager.\+java\end{DoxyCompactItemize}

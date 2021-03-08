@@ -1,0 +1,65 @@
+\hypertarget{interfacechatapplication__server_1_1components_1_1base_1_1_i_component}{}\doxysection{chatapplication\+\_\+server.\+components.\+base.\+I\+Component Interface Reference}
+\label{interfacechatapplication__server_1_1components_1_1base_1_1_i_component}\index{chatapplication\_server.components.base.IComponent@{chatapplication\_server.components.base.IComponent}}
+Inheritance diagram for chatapplication\+\_\+server.\+components.\+base.\+I\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.608696cm]{interfacechatapplication__server_1_1components_1_1base_1_1_i_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a94b26077c9d5c8961d3a87c31ccfbbc0}{initialize}} ()  throws Component\+Init\+Exception, Property\+Load\+Exception
+\item 
+abstract void \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_ab1872d668128a5e8284b8ba84ed12e54}{shutdown}} ()
+\item 
+abstract void \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a784d941c136f65a7c3152edd7a1821bb}{component\+Main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface is supported by all Chat\+Application components that support automatic start-\/up and shut down by the Component Manager.
+
+It contains the method declarations for initializing, shutting down and running a component.
+
+\begin{DoxyAuthor}{Author}
+atgianne 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a784d941c136f65a7c3152edd7a1821bb}\label{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a784d941c136f65a7c3152edd7a1821bb}} 
+\index{chatapplication\_server.components.base.IComponent@{chatapplication\_server.components.base.IComponent}!componentMain@{componentMain}}
+\index{componentMain@{componentMain}!chatapplication\_server.components.base.IComponent@{chatapplication\_server.components.base.IComponent}}
+\doxysubsubsection{\texorpdfstring{componentMain()}{componentMain()}}
+{\footnotesize\ttfamily abstract void chatapplication\+\_\+server.\+components.\+base.\+I\+Component.\+component\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Method declaration of the component\textquotesingle{}s main function containing the main component logic. 
+
+Implemented in \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_g_u_i_a5791af5e137332e9e0e37deddc8a7388}{chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Server\+G\+UI}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine_afc5d978cd66e6e342e2ae1af8c8128d6}{chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Server\+Engine}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_config_manager_a2ee17915beccc185fe5e99265585cb96}{chatapplication\+\_\+server.\+components.\+Config\+Manager}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_socket_g_u_i_ab8df5b08ae35f84250b90fdc121ff340}{chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Socket\+G\+UI}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a5b274c3fd9015e91b4dd6635cb77d982}{chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine}}, and \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_ad5b37d7e8f2eb2f8c1e1a718435adb9b}{chatapplication\+\_\+server.\+components.\+Chat\+Application\+Server\+Properties\+Loader}}.
+
+\mbox{\Hypertarget{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a94b26077c9d5c8961d3a87c31ccfbbc0}\label{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a94b26077c9d5c8961d3a87c31ccfbbc0}} 
+\index{chatapplication\_server.components.base.IComponent@{chatapplication\_server.components.base.IComponent}!initialize@{initialize}}
+\index{initialize@{initialize}!chatapplication\_server.components.base.IComponent@{chatapplication\_server.components.base.IComponent}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily abstract void chatapplication\+\_\+server.\+components.\+base.\+I\+Component.\+initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classchatapplication__server_1_1exception_1_1_component_init_exception}{Component\+Init\+Exception}}, \mbox{\hyperlink{classchatapplication__server_1_1exception_1_1_property_load_exception}{Property\+Load\+Exception}}\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Method declaration for initializing the component I\+M\+P\+O\+R\+T\+A\+NT This method must not block 
+
+Implemented in \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_g_u_i_ac67b4c2e29be007849ad4b3b9998cfba}{chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Server\+G\+UI}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine_a85ec25a565ac7b4e829815d3774aff5a}{chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Server\+Engine}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_config_manager_a072c9bd7911417a6bdba0536a18a3719}{chatapplication\+\_\+server.\+components.\+Config\+Manager}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_socket_g_u_i_a4795c795888b8ab7be1ca626fb0dc2da}{chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Socket\+G\+UI}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_aaba8b752d01d735abaaf6f0f69f51138}{chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_a7d5df83ca688fbc83a7308cca8b34355}{chatapplication\+\_\+server.\+components.\+Chat\+Application\+Server\+Properties\+Loader}}, and \mbox{\hyperlink{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_acccc072fa0756b99dc279ab10f732a51}{chatapplication\+\_\+server.\+components.\+base.\+Generic\+Threaded\+Component}}.
+
+\mbox{\Hypertarget{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_ab1872d668128a5e8284b8ba84ed12e54}\label{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_ab1872d668128a5e8284b8ba84ed12e54}} 
+\index{chatapplication\_server.components.base.IComponent@{chatapplication\_server.components.base.IComponent}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!chatapplication\_server.components.base.IComponent@{chatapplication\_server.components.base.IComponent}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily abstract void chatapplication\+\_\+server.\+components.\+base.\+I\+Component.\+shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Method declaration for signaling the component that it must terminate its execution. 
+
+Implemented in \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_g_u_i_a3f37b3d49edb00c519e6faf5c39a81ef}{chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Server\+G\+UI}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine_a31b14485e4311abdbfa1efb18c92d1f0}{chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Server\+Engine}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_config_manager_aae06105641480b551e89b057069326ae}{chatapplication\+\_\+server.\+components.\+Config\+Manager}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_socket_g_u_i_a112283f832a08659fd1e81954d7a35a0}{chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Socket\+G\+UI}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a98c2067b77792b34d2f7439f5bf2c9fd}{chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine}}, \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_aff0247820223ecb54e08c910bf5897ae}{chatapplication\+\_\+server.\+components.\+Chat\+Application\+Server\+Properties\+Loader}}, and \mbox{\hyperlink{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a6b3f86ab035ca8452a60b33a91bc5597}{chatapplication\+\_\+server.\+components.\+base.\+Generic\+Threaded\+Component}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+chatapplication\+\_\+server/components/base/I\+Component.\+java\end{DoxyCompactItemize}

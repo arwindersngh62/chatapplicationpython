@@ -1,0 +1,134 @@
+\hypertarget{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine}{}\doxysection{chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine Class Reference}
+\label{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine}\index{chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}}
+Inheritance diagram for chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.014389cm]{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_ae94a044c1c1c8bda7ffa37616734dd8b}{Client\+Engine}} ()
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_aaba8b752d01d735abaaf6f0f69f51138}{initialize}} ()  throws Component\+Init\+Exception     
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_aac04dcca97a863427f3baaf4f0516031}{send\+Message}} (\mbox{\hyperlink{class_socket_action_messages_1_1_chat_message}{Chat\+Message}} msg)
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a5b274c3fd9015e91b4dd6635cb77d982}{component\+Main}} ()
+\item 
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a05b5705f7c0fb523512d25ac1964c9c8}\label{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a05b5705f7c0fb523512d25ac1964c9c8}} 
+Object\+Input\+Stream {\bfseries get\+Stream\+Reader} ()
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a98c2067b77792b34d2f7439f5bf2c9fd}{shutdown}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine}{Client\+Engine}} \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a0cd3cdc4fe11bfd31cfd39fff918c152}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+atgianne 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_ae94a044c1c1c8bda7ffa37616734dd8b}\label{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_ae94a044c1c1c8bda7ffa37616734dd8b}} 
+\index{chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}!ClientEngine@{ClientEngine}}
+\index{ClientEngine@{ClientEngine}!chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}}
+\doxysubsubsection{\texorpdfstring{ClientEngine()}{ClientEngine()}}
+{\footnotesize\ttfamily chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine.\+Client\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a new instance of Socket\+Server\+Engine 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a5b274c3fd9015e91b4dd6635cb77d982}\label{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a5b274c3fd9015e91b4dd6635cb77d982}} 
+\index{chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}!componentMain@{componentMain}}
+\index{componentMain@{componentMain}!chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}}
+\doxysubsubsection{\texorpdfstring{componentMain()}{componentMain()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine.\+component\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method holding the main logic of the Client Engine. It basically waits for inputs from the user to be sent to the Server. Wait messages from the user...
+
+Implements \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a784d941c136f65a7c3152edd7a1821bb}{chatapplication\+\_\+server.\+components.\+base.\+I\+Component}}.
+
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a0cd3cdc4fe11bfd31cfd39fff918c152}\label{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a0cd3cdc4fe11bfd31cfd39fff918c152}} 
+\index{chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine}{Client\+Engine}} chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Make sure that we can only get one instance of the Socket\+Server\+Engine component. Implementation of the static \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a0cd3cdc4fe11bfd31cfd39fff918c152}{get\+Instance()}} method. \mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_aaba8b752d01d735abaaf6f0f69f51138}\label{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_aaba8b752d01d735abaaf6f0f69f51138}} 
+\index{chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}!initialize@{initialize}}
+\index{initialize@{initialize}!chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine.\+initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classchatapplication__server_1_1exception_1_1_component_init_exception}{Component\+Init\+Exception}}}
+
+Implementation of \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a94b26077c9d5c8961d3a87c31ccfbbc0}{I\+Component.\+initialize}} method(). This method is called upon initialize of the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine}{Client\+Engine}} component and handles any configuration that needs to be done in the client before it connects to the Chat Application Server.
+
+\begin{DoxySeeAlso}{See also}
+I\+Component interface. 
+\end{DoxySeeAlso}
+Get the running instance of the Configuration Manager component
+
+For printing the configuration properties of the secure socket server
+
+Try and connect to the server...
+
+Print that the connection was accepted
+
+Create the read/write object streams...
+
+Set up the stream reader/writer for this socket connection...
+
+Start the Liste\+From\+Server thread...
+
+Send our username to the server...
+
+Reimplemented from \mbox{\hyperlink{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_acccc072fa0756b99dc279ab10f732a51}{chatapplication\+\_\+server.\+components.\+base.\+Generic\+Threaded\+Component}}.
+
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_aac04dcca97a863427f3baaf4f0516031}\label{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_aac04dcca97a863427f3baaf4f0516031}} 
+\index{chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine.\+send\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_socket_action_messages_1_1_chat_message}{Chat\+Message}}}]{msg }\end{DoxyParamCaption})}
+
+Method for sending a message to the server
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The message to be sent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a98c2067b77792b34d2f7439f5bf2c9fd}\label{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine_a98c2067b77792b34d2f7439f5bf2c9fd}} 
+\index{chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!chatapplication\_server.components.ClientSocketEngine.ClientEngine@{chatapplication\_server.components.ClientSocketEngine.ClientEngine}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+Client\+Socket\+Engine.\+Client\+Engine.\+shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Override \mbox{\hyperlink{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a6b3f86ab035ca8452a60b33a91bc5597}{Generic\+Threaded\+Component.\+shutdown()}} method. Signal and wait until the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_client_socket_engine_1_1_client_engine}{Client\+Engine}} thread, holding the secure socket connection, stops.
+
+\begin{DoxySeeAlso}{See also}
+Generic\+Threaded\+Component 
+\end{DoxySeeAlso}
+Close the secure socket server
+
+Shut down the Client Socket
+
+Print in the Event area of the Server Windows G\+UI the close operation of the Socket Server...
+
+Print to the logging stream that shutting down the Central System socket server failed
+
+Invoke our parent\textquotesingle{}s method to stop the thread running the secure socket server...
+
+Reimplemented from \mbox{\hyperlink{classchatapplication__server_1_1components_1_1base_1_1_generic_threaded_component_a6b3f86ab035ca8452a60b33a91bc5597}{chatapplication\+\_\+server.\+components.\+base.\+Generic\+Threaded\+Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+chatapplication\+\_\+server/components/\+Client\+Socket\+Engine/Client\+Engine.\+java\end{DoxyCompactItemize}

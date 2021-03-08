@@ -1,0 +1,247 @@
+\hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler}{}\doxysection{chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler Class Reference}
+\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler}\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+Inheritance diagram for chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a5d2e169e5909181e7b1d25c94e8cc564}{Socket\+Connection\+Handler}} ()
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_abba52890fb75ad5c7df500154c8c7743}{print\+Socket\+Info}} ()
+\item 
+boolean \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a96c263c336065419f44d8cfe8744966e}{set\+Socket\+Stream\+Reader\+Writer}} ()
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a275f507f614bff66c4a246625986de3e}{set\+Handler\+Identifier\+Name}} (String s)
+\item 
+String \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a5ffa1cd2d0f8668469fd7326e5bd4a2f}{get\+Handler\+Identifier\+Name}} ()
+\item 
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a5a62d0cea3bddf0044a6018a1b10677b}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a5a62d0cea3bddf0044a6018a1b10677b}} 
+String {\bfseries get\+User\+Name} ()
+\item 
+Socket \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a129dc7b7183a4e7b90a32952259f12df}{get\+Handle\+Socket}} ()
+\item 
+synchronized void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_ab74b0e105539e18b5df75b8e97bdf9b6}{run}} ()
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_abd1ff8ed3216807170fb7d21cf5f2808}{receive\+Content}} ()
+\item 
+boolean \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a2a1edd377b107905cc15f504626f1b64}{write\+Msg}} (String msg)
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_af43503e6c8d5024036e7ac2a531fbf0c}{socket\+Connection\+Handler\+Release}} ()
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_ae7873438e83b556af781728b00d9ee91}{stop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_ab926b328a51bf426c75410ebef713a1a}{must\+Shutdown}}
+\item 
+boolean \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_ada58e5a55aed3e87774b5ae65748f825}{is\+Socket\+Open}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+atgianne 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a5d2e169e5909181e7b1d25c94e8cc564}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a5d2e169e5909181e7b1d25c94e8cc564}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!SocketConnectionHandler@{SocketConnectionHandler}}
+\index{SocketConnectionHandler@{SocketConnectionHandler}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{SocketConnectionHandler()}{SocketConnectionHandler()}}
+{\footnotesize\ttfamily chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+Socket\+Connection\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a new instance of \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler}{Socket\+Connection\+Handler}} Get the running instance of the Configuration Manager component
+
+Auxiliary object for printing purposes
+
+Initialize the must\+Shutdown flag...
+
+Initialize the is\+Socket\+Open flag, the Handler and the sensor type identifiers...
+
+Initialize the socket connection
+
+Initialize the socket connection stream reader/writer...
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a5ffa1cd2d0f8668469fd7326e5bd4a2f}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a5ffa1cd2d0f8668469fd7326e5bd4a2f}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!getHandlerIdentifierName@{getHandlerIdentifierName}}
+\index{getHandlerIdentifierName@{getHandlerIdentifierName}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{getHandlerIdentifierName()}{getHandlerIdentifierName()}}
+{\footnotesize\ttfamily String chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+get\+Handler\+Identifier\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method for getting the identifier name of this Connection\+Handler thread.
+
+\begin{DoxyReturn}{Returns}
+The String identifier of this Connection\+Handler thread 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a129dc7b7183a4e7b90a32952259f12df}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a129dc7b7183a4e7b90a32952259f12df}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!getHandleSocket@{getHandleSocket}}
+\index{getHandleSocket@{getHandleSocket}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{getHandleSocket()}{getHandleSocket()}}
+{\footnotesize\ttfamily Socket chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+get\+Handle\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method for getting the Socket connection operated by this handler
+
+\begin{DoxyReturn}{Returns}
+The socket connection that is currently handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_abba52890fb75ad5c7df500154c8c7743}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_abba52890fb75ad5c7df500154c8c7743}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!printSocketInfo@{printSocketInfo}}
+\index{printSocketInfo@{printSocketInfo}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{printSocketInfo()}{printSocketInfo()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+print\+Socket\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method for printing some information about the socket connection that this Connection\+Handler thread is accommodating. Check to see if there is a connection...
+
+If it is not closed...
+
+Print some auxiliary information...\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_abd1ff8ed3216807170fb7d21cf5f2808}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_abd1ff8ed3216807170fb7d21cf5f2808}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!receiveContent@{receiveContent}}
+\index{receiveContent@{receiveContent}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{receiveContent()}{receiveContent()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+receive\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method for handling any data transmission/reception of the assigned socket connection. The \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler}{Socket\+Connection\+Handler}} retrieves the stream sent by the client. Whenever, the stream is empty (client doesn\textquotesingle{}t send anything), the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler}{Socket\+Connection\+Handler}} remains idle and goes back to business only when necessary!! Wait until there is something in the stream to be read...
+
+If we finished the \textquotesingle{}handling\textquotesingle{} of the assigned socket connection, add ourselves in the connection\+Handling pool for future use
+
+Also, inform the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} to remove us from the occupance pool...
+
+Keep track of this exception in the logging stream...
+
+Keep track of this exception in the logging stream...
+
+Keep track of this exception in the logging stream...
+
+Change the socket status...\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_ab74b0e105539e18b5df75b8e97bdf9b6}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_ab74b0e105539e18b5df75b8e97bdf9b6}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!run@{run}}
+\index{run@{run}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily synchronized void chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Java thread entry point... This method contains the main functionality of the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler}{Socket\+Connection\+Handler}}. When the worker handler is in idle state, it just waits to be notified by the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} that a new socket connection has been established and must be handled by this worker. Once a socket connection is assigned to this Connection\+Handler, it waits until there is some data for reception. Upon shut down, it returns to the Connectionhandling pool for future use by another socket connection. If we are in idle state, don\textquotesingle{}t do anything;just wait to be notified
+
+IN N\+O\+R\+M\+AL O\+P\+E\+R\+A\+T\+I\+ON T\+H\+IS S\+H\+O\+U\+LD N\+E\+V\+ER H\+A\+P\+P\+EN...
+
+Print to logging stream that something went wrong
+
+Notify the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} that we are about to die in order to create a new S\+S\+L\+Connection\+Handler in our place
+
+Notify the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} to remove us from the occupance pool...
+
+Then shut down...
+
+Stop this S\+S\+L\+Connection\+Handler worker
+
+If we are notified/assigned to handle a socket connection... Call the receive\+Content method for waiting data/requests from the Alix client. The Connection Handler thread will stay in this method during the lifetime of the assigned socket connection
+
+If we finished the \textquotesingle{}handling\textquotesingle{} of the assigned socket connection, add ourselves in the connection\+Handling pool for future use
+
+Also, inform the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} to remove us from the occupance pool...\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a275f507f614bff66c4a246625986de3e}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a275f507f614bff66c4a246625986de3e}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!setHandlerIdentifierName@{setHandlerIdentifierName}}
+\index{setHandlerIdentifierName@{setHandlerIdentifierName}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{setHandlerIdentifierName()}{setHandlerIdentifierName()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+set\+Handler\+Identifier\+Name (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})}
+
+Method for setting the identifier name of this Connection\+Handler thread. Since we will have \char`\"{}\+Connection\+Handlers.\+Name\char`\"{} number of thread in the Connectionhandling pool, we must have an identifier for for being able to distinguish them.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The String identifier to be given in this Connection\+Handler thread \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a96c263c336065419f44d8cfe8744966e}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a96c263c336065419f44d8cfe8744966e}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!setSocketStreamReaderWriter@{setSocketStreamReaderWriter}}
+\index{setSocketStreamReaderWriter@{setSocketStreamReaderWriter}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{setSocketStreamReaderWriter()}{setSocketStreamReaderWriter()}}
+{\footnotesize\ttfamily boolean chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+set\+Socket\+Stream\+Reader\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method for setting up the stream reader/writer of the assigned to us secure socket connection between the chat clients and the server.
+
+\begin{DoxyReturn}{Returns}
+T\+R\+UE If the set up was successful; F\+A\+L\+SE otherwise 
+\end{DoxyReturn}
+Set up the stream reader/writer for this socket connection...
+
+Read the username
+
+Keep track of the exception in the logging stream...
+
+Notify the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} that we are about to die in order to create a new S\+S\+L\+Connection\+Handler in our place
+
+Notify the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} to remove us from the occupance pool...
+
+Then shut down...
+
+Keep track of this exception in the logging stream...
+
+Keep track of the exception in the logging stream...
+
+Notify the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} that we are about to die in order to create a new S\+S\+L\+Connection\+Handler in our place
+
+Notify the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} to remove us from the occupance pool...
+
+Then shut down...
+
+Keep track of the exception in the logging stream...
+
+Notify the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} that we are about to die in order to create a new S\+S\+L\+Connection\+Handler in our place
+
+Notify the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} to remove us from the occupance pool...
+
+Then shut down...\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_af43503e6c8d5024036e7ac2a531fbf0c}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_af43503e6c8d5024036e7ac2a531fbf0c}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!socketConnectionHandlerRelease@{socketConnectionHandlerRelease}}
+\index{socketConnectionHandlerRelease@{socketConnectionHandlerRelease}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{socketConnectionHandlerRelease()}{socketConnectionHandlerRelease()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+socket\+Connection\+Handler\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method that is called whenever a Connection\+Handler thread finished the execution of an assigned socket connection. In that case, it must add itself in the Connectionhandling pool of the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} component for future use and return to idle state waiting for new connections. First clear the reference to the previous connection...
+
+Initialize the auxiliary identifier variables...
+
+Print to the logging stream that this S\+S\+L\+Connection\+Handler is returing in the Connection\+Handling pool...
+
+Get the connection\+Handling pool from the S\+S\+L\+Engine\+Server component to add ourselves\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_ae7873438e83b556af781728b00d9ee91}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_ae7873438e83b556af781728b00d9ee91}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!stop@{stop}}
+\index{stop@{stop}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method for notifying this \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler}{Socket\+Connection\+Handler}} thread to stop its execution. First get out from execution mode the Connection Handler...
+
+Signal the Connection Handler thread to stop its execution...
+
+Notify the Connection\+Handler thread in case it is in an idle state waiting...\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a2a1edd377b107905cc15f504626f1b64}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_a2a1edd377b107905cc15f504626f1b64}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!writeMsg@{writeMsg}}
+\index{writeMsg@{writeMsg}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{writeMsg()}{writeMsg()}}
+{\footnotesize\ttfamily boolean chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+write\+Msg (\begin{DoxyParamCaption}\item[{String}]{msg }\end{DoxyParamCaption})}
+
+If we finished the \textquotesingle{}handling\textquotesingle{} of the assigned socket connection, add ourselves in the connection\+Handling pool for future use
+
+Also, inform the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_server_engine}{Socket\+Server\+Engine}} to remove us from the occupance pool...
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_ada58e5a55aed3e87774b5ae65748f825}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_ada58e5a55aed3e87774b5ae65748f825}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!isSocketOpen@{isSocketOpen}}
+\index{isSocketOpen@{isSocketOpen}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{isSocketOpen}{isSocketOpen}}
+{\footnotesize\ttfamily boolean chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+is\+Socket\+Open\hspace{0.3cm}{\ttfamily [protected]}}
+
+Flag for indicating whether we are handling a socket or not \mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_ab926b328a51bf426c75410ebef713a1a}\label{classchatapplication__server_1_1components_1_1_server_socket_engine_1_1_socket_connection_handler_ab926b328a51bf426c75410ebef713a1a}} 
+\index{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}!mustShutdown@{mustShutdown}}
+\index{mustShutdown@{mustShutdown}!chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler@{chatapplication\_server.components.ServerSocketEngine.SocketConnectionHandler}}
+\doxysubsubsection{\texorpdfstring{mustShutdown}{mustShutdown}}
+{\footnotesize\ttfamily boolean chatapplication\+\_\+server.\+components.\+Server\+Socket\+Engine.\+Socket\+Connection\+Handler.\+must\+Shutdown\hspace{0.3cm}{\ttfamily [protected]}}
+
+Did we receive a signal to shut down 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+chatapplication\+\_\+server/components/\+Server\+Socket\+Engine/Socket\+Connection\+Handler.\+java\end{DoxyCompactItemize}

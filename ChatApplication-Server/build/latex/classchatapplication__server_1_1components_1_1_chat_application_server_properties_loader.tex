@@ -1,0 +1,144 @@
+\hypertarget{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader}{}\doxysection{chatapplication\+\_\+server.\+components.\+Chat\+Application\+Server\+Properties\+Loader Class Reference}
+\label{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader}\index{chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}}
+Inheritance diagram for chatapplication\+\_\+server.\+components.\+Chat\+Application\+Server\+Properties\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_ab326d2b96e65264f6968cb4f6f1dcc46}{Chat\+Application\+Server\+Properties\+Loader}} ()
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_a7d5df83ca688fbc83a7308cca8b34355}{initialize}} ()  throws Component\+Init\+Exception, Property\+Load\+Exception     
+\item 
+boolean \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_a3bf9d89871f1f84fb63d2fffe6caf1a7}{check\+Property\+Value}} (String config\+Value, String loaded\+Prop)
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_ad5b37d7e8f2eb2f8c1e1a718435adb9b}{component\+Main}} ()
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_aff0247820223ecb54e08c910bf5897ae}{shutdown}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader}{Chat\+Application\+Server\+Properties\+Loader}} \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_ae588958fc2310b1d2725ae8f8526086a}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Properties \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_a9f7c51e299249beb851d93ab8bce7d20}{C\+S\+Props}} = new Properties()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class file is responsible for loading all configuration properties defined in the chatapplication-\/server.\+properties file stored in the \char`\"{}dist\char`\"{} folder of the Chat\+Application\+Server project. These property values will be passed to the Configuration Manager component instance in order to be accessible from all other implemented components.
+
+I\+M\+P\+O\+R\+T\+A\+NT N\+O\+TE In case of a property with a \char`\"{}null\char`\"{} (or no) value in the chatapplication-\/server.\+properties file an exception will be thrown. The only difference is for the Log\+File property which in case of a \char`\"{}null\char`\"{} value, the Log\+Viewer component redirects logging to the standard Java output.
+
+\begin{DoxyAuthor}{Author}
+atgianne 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_ab326d2b96e65264f6968cb4f6f1dcc46}\label{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_ab326d2b96e65264f6968cb4f6f1dcc46}} 
+\index{chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}!ChatApplicationServerPropertiesLoader@{ChatApplicationServerPropertiesLoader}}
+\index{ChatApplicationServerPropertiesLoader@{ChatApplicationServerPropertiesLoader}!chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}}
+\doxysubsubsection{\texorpdfstring{ChatApplicationServerPropertiesLoader()}{ChatApplicationServerPropertiesLoader()}}
+{\footnotesize\ttfamily chatapplication\+\_\+server.\+components.\+Chat\+Application\+Server\+Properties\+Loader.\+Chat\+Application\+Server\+Properties\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a new instance of L\+S\+C\+S\+Properties\+Loader 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_a3bf9d89871f1f84fb63d2fffe6caf1a7}\label{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_a3bf9d89871f1f84fb63d2fffe6caf1a7}} 
+\index{chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}!checkPropertyValue@{checkPropertyValue}}
+\index{checkPropertyValue@{checkPropertyValue}!chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}}
+\doxysubsubsection{\texorpdfstring{checkPropertyValue()}{checkPropertyValue()}}
+{\footnotesize\ttfamily boolean chatapplication\+\_\+server.\+components.\+Chat\+Application\+Server\+Properties\+Loader.\+check\+Property\+Value (\begin{DoxyParamCaption}\item[{String}]{config\+Value,  }\item[{String}]{loaded\+Prop }\end{DoxyParamCaption})}
+
+Method for checking the value of a loaded property from the chatapplication-\/server.\+properties file. If the value is not \char`\"{}null\char`\"{}, it is passed to the Configuration Manager component in order to be accessible from all other components; otherwise a false statement is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config\+ID} & The name of the configuration property to be set \\
+\hline
+{\em loaded\+Prop} & String representation of the loaded property to be checked\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE if the value is not \char`\"{}null\char`\"{}; F\+A\+L\+SE otherwise 
+\end{DoxyReturn}
+Check the property value and pass it to the \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_config_manager}{Config\+Manager}} component if not \char`\"{}null\char`\"{}\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_ad5b37d7e8f2eb2f8c1e1a718435adb9b}\label{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_ad5b37d7e8f2eb2f8c1e1a718435adb9b}} 
+\index{chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}!componentMain@{componentMain}}
+\index{componentMain@{componentMain}!chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}}
+\doxysubsubsection{\texorpdfstring{componentMain()}{componentMain()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+Chat\+Application\+Server\+Properties\+Loader.\+component\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Implementation of the \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a784d941c136f65a7c3152edd7a1821bb}{I\+Component.\+component\+Main}} method
+
+\begin{DoxySeeAlso}{See also}
+I\+Component interface 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a784d941c136f65a7c3152edd7a1821bb}{chatapplication\+\_\+server.\+components.\+base.\+I\+Component}}.
+
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_ae588958fc2310b1d2725ae8f8526086a}\label{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_ae588958fc2310b1d2725ae8f8526086a}} 
+\index{chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader}{Chat\+Application\+Server\+Properties\+Loader}} chatapplication\+\_\+server.\+components.\+Chat\+Application\+Server\+Properties\+Loader.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Make sure that we can only get one instance of the L\+S\+C\+S\+Properties\+Loader component. Implementation of the static \mbox{\hyperlink{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_ae588958fc2310b1d2725ae8f8526086a}{get\+Instance()}} method. \mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_a7d5df83ca688fbc83a7308cca8b34355}\label{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_a7d5df83ca688fbc83a7308cca8b34355}} 
+\index{chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}!initialize@{initialize}}
+\index{initialize@{initialize}!chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+Chat\+Application\+Server\+Properties\+Loader.\+initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classchatapplication__server_1_1exception_1_1_component_init_exception}{Component\+Init\+Exception}}, \mbox{\hyperlink{classchatapplication__server_1_1exception_1_1_property_load_exception}{Property\+Load\+Exception}}}
+
+Implementation of the \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a94b26077c9d5c8961d3a87c31ccfbbc0}{I\+Component.\+initialize}} method. Load all the configuration properties from the lotus-\/server.\+properties file and pass them to the Configuration Manager component.
+
+\begin{DoxySeeAlso}{See also}
+I\+Component interface 
+\end{DoxySeeAlso}
+Get the running instance of the Comfiguration Manager component
+
+The default value of the lotus-\/server.\+properties folder is \char`\"{}dist/chatapplication-\/server.\+properties\char`\"{}
+
+Try to load the chatapplication-\/server.\+properties file
+
+Load the number of Connection Handlers that will reside in the Connection\+Handling poll for handling any received socket connections
+
+Load the port number where the server is going to listen; if \char`\"{}null\char`\"{} or \char`\"{}\char`\"{} then the default value is 1500
+
+Implements \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_a94b26077c9d5c8961d3a87c31ccfbbc0}{chatapplication\+\_\+server.\+components.\+base.\+I\+Component}}.
+
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_aff0247820223ecb54e08c910bf5897ae}\label{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_aff0247820223ecb54e08c910bf5897ae}} 
+\index{chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+components.\+Chat\+Application\+Server\+Properties\+Loader.\+shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Implementation of the \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_ab1872d668128a5e8284b8ba84ed12e54}{I\+Component.\+shutdown()}} method
+
+\begin{DoxySeeAlso}{See also}
+I\+Component interface 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interfacechatapplication__server_1_1components_1_1base_1_1_i_component_ab1872d668128a5e8284b8ba84ed12e54}{chatapplication\+\_\+server.\+components.\+base.\+I\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_a9f7c51e299249beb851d93ab8bce7d20}\label{classchatapplication__server_1_1components_1_1_chat_application_server_properties_loader_a9f7c51e299249beb851d93ab8bce7d20}} 
+\index{chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}!CSProps@{CSProps}}
+\index{CSProps@{CSProps}!chatapplication\_server.components.ChatApplicationServerPropertiesLoader@{chatapplication\_server.components.ChatApplicationServerPropertiesLoader}}
+\doxysubsubsection{\texorpdfstring{CSProps}{CSProps}}
+{\footnotesize\ttfamily Properties chatapplication\+\_\+server.\+components.\+Chat\+Application\+Server\+Properties\+Loader.\+C\+S\+Props = new Properties()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Properties class object for holding L\+S\+CS configuration information 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+chatapplication\+\_\+server/components/Chat\+Application\+Server\+Properties\+Loader.\+java\end{DoxyCompactItemize}

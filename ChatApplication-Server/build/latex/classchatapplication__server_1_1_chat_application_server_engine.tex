@@ -1,0 +1,98 @@
+\hypertarget{classchatapplication__server_1_1_chat_application_server_engine}{}\doxysection{chatapplication\+\_\+server.\+Chat\+Application\+Server\+Engine Class Reference}
+\label{classchatapplication__server_1_1_chat_application_server_engine}\index{chatapplication\_server.ChatApplicationServerEngine@{chatapplication\_server.ChatApplicationServerEngine}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classchatapplication__server_1_1_chat_application_server_engine_a1103ae230d2a28e1f5f5390afb8789bf}{Chat\+Application\+Server\+Engine}} ()
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1_chat_application_server_engine_a91986852c3c1759600b277a7e09b9e56}{start\+Up\+C\+A\+Server}} ()
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1_chat_application_server_engine_a8d72f337cbc98fa9a0e45283e51337b1}{start\+Up\+C\+A\+Client}} ()
+\item 
+void \mbox{\hyperlink{classchatapplication__server_1_1_chat_application_server_engine_ad811eb7d0f628daac73f231084fd7dff}{shut\+Down\+CA}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classchatapplication__server_1_1_chat_application_server_engine_a0fa47cd71ec613e96eba4c99d272f6a8}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classchatapplication__server_1_1_chat_application_server_engine}{Chat\+Application\+Server\+Engine}} class is responsible for providing the appropriate interface in order for the system to correctly start up and shut down all the necessary components. Provided method implementations\+:\+: --\mbox{\hyperlink{classchatapplication__server_1_1_chat_application_server_engine_a91986852c3c1759600b277a7e09b9e56}{start\+Up\+C\+A\+Server()}}\+: Boot up the Chat\+Application\+Server system when \textquotesingle{}Mode=Server\textquotesingle{} is given as argument --shut\+Down\+C\+A\+Server()\+: Safely shut down the Chat\+Application\+Server system when \textquotesingle{}Mode=Server\textquotesingle{} is given as argument --\mbox{\hyperlink{classchatapplication__server_1_1_chat_application_server_engine_a8d72f337cbc98fa9a0e45283e51337b1}{start\+Up\+C\+A\+Client()}}\+: Boot up the Chat\+Application\+Client system when \textquotesingle{}Mode=Client\textquotesingle{} is given as argument --shut\+Down\+C\+A\+Client()\+: Safely shut down the Chat\+Application\+Client system when \textquotesingle{}Mode=Client\textquotesingle{} is given as argument
+
+Furhtermore, the \mbox{\hyperlink{classchatapplication__server_1_1_chat_application_server_engine}{Chat\+Application\+Server\+Engine}} class provides a Main method in order for a user to be able to boot up the system through a terminal command of type java -\/cp Chat\+Application-\/\+Server.\+jar chatapplication\+\_\+server.\+Main.
+
+\begin{DoxyAuthor}{Author}
+atgianne 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1_chat_application_server_engine_a1103ae230d2a28e1f5f5390afb8789bf}\label{classchatapplication__server_1_1_chat_application_server_engine_a1103ae230d2a28e1f5f5390afb8789bf}} 
+\index{chatapplication\_server.ChatApplicationServerEngine@{chatapplication\_server.ChatApplicationServerEngine}!ChatApplicationServerEngine@{ChatApplicationServerEngine}}
+\index{ChatApplicationServerEngine@{ChatApplicationServerEngine}!chatapplication\_server.ChatApplicationServerEngine@{chatapplication\_server.ChatApplicationServerEngine}}
+\doxysubsubsection{\texorpdfstring{ChatApplicationServerEngine()}{ChatApplicationServerEngine()}}
+{\footnotesize\ttfamily chatapplication\+\_\+server.\+Chat\+Application\+Server\+Engine.\+Chat\+Application\+Server\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a new instance of L\+S\+C\+S\+Engine 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classchatapplication__server_1_1_chat_application_server_engine_a0fa47cd71ec613e96eba4c99d272f6a8}\label{classchatapplication__server_1_1_chat_application_server_engine_a0fa47cd71ec613e96eba4c99d272f6a8}} 
+\index{chatapplication\_server.ChatApplicationServerEngine@{chatapplication\_server.ChatApplicationServerEngine}!main@{main}}
+\index{main@{main}!chatapplication\_server.ChatApplicationServerEngine@{chatapplication\_server.ChatApplicationServerEngine}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void chatapplication\+\_\+server.\+Chat\+Application\+Server\+Engine.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Method implementation of the main logic of the Chat\+Application\+Server system. I\+M\+P\+O\+R\+T\+A\+NT This method can only be called by a user in the case of a boot up procedure through a command terminal
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The command line arguments \\
+\hline
+\end{DoxyParams}
+Boot up the Chat\+Application\+Server system...
+
+Boot up the Chat\+Application\+Client system...
+
+Wait for a keypress; prevent other threads from dying
+
+Safely shut down the L\+S\+CS system...\mbox{\Hypertarget{classchatapplication__server_1_1_chat_application_server_engine_ad811eb7d0f628daac73f231084fd7dff}\label{classchatapplication__server_1_1_chat_application_server_engine_ad811eb7d0f628daac73f231084fd7dff}} 
+\index{chatapplication\_server.ChatApplicationServerEngine@{chatapplication\_server.ChatApplicationServerEngine}!shutDownCA@{shutDownCA}}
+\index{shutDownCA@{shutDownCA}!chatapplication\_server.ChatApplicationServerEngine@{chatapplication\_server.ChatApplicationServerEngine}}
+\doxysubsubsection{\texorpdfstring{shutDownCA()}{shutDownCA()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+Chat\+Application\+Server\+Engine.\+shut\+Down\+CA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method invoked when we want to normally shut down the Chat\+Application system main method. This results in shutting down all the active components of the Chat\+Application system. \mbox{\Hypertarget{classchatapplication__server_1_1_chat_application_server_engine_a8d72f337cbc98fa9a0e45283e51337b1}\label{classchatapplication__server_1_1_chat_application_server_engine_a8d72f337cbc98fa9a0e45283e51337b1}} 
+\index{chatapplication\_server.ChatApplicationServerEngine@{chatapplication\_server.ChatApplicationServerEngine}!startUpCAClient@{startUpCAClient}}
+\index{startUpCAClient@{startUpCAClient}!chatapplication\_server.ChatApplicationServerEngine@{chatapplication\_server.ChatApplicationServerEngine}}
+\doxysubsubsection{\texorpdfstring{startUpCAClient()}{startUpCAClient()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+Chat\+Application\+Server\+Engine.\+start\+Up\+C\+A\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method implementation for successfully booting up the Chat\+Application\+Client system. It starts in a secure manner and order all the implemented Chat\+Application\+Client components. Fetch the \mbox{\hyperlink{classchatapplication__server_1_1_component_manager}{Component\+Manager}} running instance
+
+Setup the list of the Chat\+Application\+Server system components that we want to run
+
+I\+M\+P\+O\+R\+T\+A\+NT Add them in the order that they should be started
+
+First start the Configuration Manager component since we must load to it the necessary passwords...
+
+Then fire the other components up...\mbox{\Hypertarget{classchatapplication__server_1_1_chat_application_server_engine_a91986852c3c1759600b277a7e09b9e56}\label{classchatapplication__server_1_1_chat_application_server_engine_a91986852c3c1759600b277a7e09b9e56}} 
+\index{chatapplication\_server.ChatApplicationServerEngine@{chatapplication\_server.ChatApplicationServerEngine}!startUpCAServer@{startUpCAServer}}
+\index{startUpCAServer@{startUpCAServer}!chatapplication\_server.ChatApplicationServerEngine@{chatapplication\_server.ChatApplicationServerEngine}}
+\doxysubsubsection{\texorpdfstring{startUpCAServer()}{startUpCAServer()}}
+{\footnotesize\ttfamily void chatapplication\+\_\+server.\+Chat\+Application\+Server\+Engine.\+start\+Up\+C\+A\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Method implementation for successfully booting up the Chat\+Application\+Server system. It starts in a secure manner and order all the implemented Chat\+Application\+Server components. Fetch the \mbox{\hyperlink{classchatapplication__server_1_1_component_manager}{Component\+Manager}} running instance
+
+Setup the list of the Chat\+Application\+Server system components that we want to run
+
+I\+M\+P\+O\+R\+T\+A\+NT Add them in the order that they should be started
+
+First start the Configuration Manager component since we must load to it the necessary passwords...
+
+Then fire the other components up...
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+chatapplication\+\_\+server/Chat\+Application\+Server\+Engine.\+java\end{DoxyCompactItemize}
